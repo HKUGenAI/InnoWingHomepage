@@ -169,6 +169,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     []
   )
 
+  console.log(recordMap)
+
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
 
@@ -281,7 +283,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
       />
 
-      <GitHubShareButton />
+      {/* <GitHubShareButton /> */}
     </>
   )
 }

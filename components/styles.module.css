@@ -106,6 +106,10 @@
   color: #c9510c;
 }
 
+.email:hover {
+  color: #777777;
+}
+
 .youtube:hover {
   color: #ff0000;
 }

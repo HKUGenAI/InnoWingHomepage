@@ -39,6 +39,12 @@ body {
   caret-color: var(--fg-color);
 }
 
+.notion-page-footer{
+  background-color: red;
+  height: 100px;
+  width: 100%;
+}
+
 ::-webkit-scrollbar
 {
   width: 5px;
