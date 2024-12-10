@@ -168,7 +168,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     []
   )
 
-  console.log(recordMap)
+  // console.log(recordMap)
 
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
@@ -186,8 +186,22 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
 
+  const fileBlockIds = keys.filter(
+    (id) => recordMap.block[id].value.type === 'file'
+  )
+
+  fileBlockIds.forEach((id) => {
+    const fileBlock = recordMap.block[id].value
+    if (fileBlock.properties?.source) {
+      console.log('fileBlock', fileBlock)
+      // const sourcePath = fileBlock.properties.source[0][0].split('amazonaws.com/')[1]
+      // fileBlock.properties.source = [['https://file.notion.so/f/f/'+sourcePath]]
+    }
+  })
+
   // const isRootPage =
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
+
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 

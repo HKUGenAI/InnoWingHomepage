@@ -350,7 +350,10 @@
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
-  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  /* box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%); */
+  
+  /* background: white; */
+  padding: 0.4rem;
 }
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
