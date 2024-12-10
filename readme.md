@@ -13,17 +13,28 @@ This project requires a recent version of Node.js (we recommend >= 16).
 2. Change a few values in [site.config.ts](./site.config.ts)
 3. `npm install`
 4. `npm run dev` to test locally
-5. `npm run deploy` to deploy to vercel 💪
 
-Vercel Account: geani.innowing@gmail.com
+### Deployment
 
-Only edit the `rootNotionPageId` in [site.config.ts](./site.config.ts). All page under the root page will be visible on the website.
+If the local Vercel CLI is not logged-in you need to loggin first by
+1. `vercel login`
+2. Select Continue with Email
+3. Enter email: genai.innowing@gmail.com
+4. Finish login by clicking the verification link sent to our email
+
+Then simply run `npm run deploy`, when asked "Link to existing project?" answer yes and choose "innowing-homepage"
+
+### Editing Metadata
+
+Only need to edit the `rootNotionPageId` in [site.config.ts](./site.config.ts). All page under the root page will be visible on the website.
 
 `rootNotionPageId` for InnoWing GenAI Homepage is: **InnoWing-GenAI-Homepage-12da31d3d5b58026bf2bce49f50d00be**
 
 ## Adding new pages
 
 Simply go to our [Root Notion Page](https://www.notion.so/innowinggenai/InnoWing-GenAI-Homepage-12da31d3d5b58026bf2bce49f50d00be?pvs=4) and edit there.
+
+You may also want the url path name tobe different of the page name, see below for instruction.
 
 
 ## URL Paths
