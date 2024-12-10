@@ -19,7 +19,7 @@ export default siteConfig({
   // social usernames (optional)
   // twitter: 'transitive_bs',
   github: 'HKUGenAI',
-  email: 'geani.innowing@gmail.com',
+  email: 'genai.innowing@gmail.com',
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
@@ -44,9 +44,7 @@ export default siteConfig({
   // example:
   //
   pageUrlOverrides: {
-    '/multimodal-rag-workshop': 'multimodal-rag-workshop-b8be2cae40b74b1989ab8dd937c9c94f',
-    '/finetuning-workshop': 'finetuning-workshop-20631d5a451c4ae1bd8450a41044b6ad',
-    '/computer-vision': 'computer-vision-1b8a446287854ba39e885434dbf9c384'
+    '/multimodal-rag-workshop': 'Unlocking-Multimodal-Intelligence-Workshop-on-RAG-System-b8be2cae40b74b1989ab8dd937c9c94f?pvs=4',
   },
   // pageUrlOverrides: null,
 
