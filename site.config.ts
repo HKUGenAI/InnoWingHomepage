@@ -10,11 +10,11 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'InnoWing GenAI Homepage',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'https://innowing-homepage.vercel.app',
   author: 'GenAI Team, InnoWing HKU',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Your AI journey starts here!',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
@@ -43,10 +43,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/multimodal-rag-workshop': 'Unlocking-Multimodal-Intelligence-Workshop-on-RAG-System-b8be2cae40b74b1989ab8dd937c9c94f',
-  // },
-  pageUrlOverrides: null,
+  pageUrlOverrides: {
+    '/multimodal-rag-workshop': 'Unlocking-Multimodal-Intelligence-Workshop-on-RAG-System-b8be2cae40b74b1989ab8dd937c9c94f',
+  },
+  // pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
