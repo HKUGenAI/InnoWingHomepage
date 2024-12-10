@@ -22,7 +22,7 @@ If the local Vercel CLI is not logged-in you need to loggin first by
 3. Enter email: genai.innowing@gmail.com
 4. Finish login by clicking the verification link sent to our email
 
-Then simply run `npm run deploy`, when asked "Link to existing project?" answer yes and choose "innowing-homepage"
+Then simply run `npm run deploy`, if asked "Link to existing project?" answer yes and choose "innowing-homepage"
 
 ### Editing Metadata
 

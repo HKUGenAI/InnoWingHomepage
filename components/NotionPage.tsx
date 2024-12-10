@@ -168,7 +168,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     []
   )
 
-  // console.log(recordMap)
+  console.log(recordMap)
 
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
@@ -186,8 +186,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
 
+  console.log('block', block)
+
+  // const fileBlockIds = keys.filter(
+  //   (id) => recordMap.block[id].value.type === 'file'
+  // )
+
   const fileBlockIds = keys.filter(
-    (id) => recordMap.block[id].value.type === 'file'
+    (id) => recordMap.block[id] && recordMap.block[id].value && recordMap.block[id].value.type === 'file'
   )
 
   fileBlockIds.forEach((id) => {

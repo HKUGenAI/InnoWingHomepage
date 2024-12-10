@@ -43,10 +43,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-    '/multimodal-rag-workshop': 'Unlocking-Multimodal-Intelligence-Workshop-on-RAG-System-b8be2cae40b74b1989ab8dd937c9c94f?pvs=4',
-  },
-  // pageUrlOverrides: null,
+  // pageUrlOverrides: {
+  //   '/multimodal-rag-workshop': 'Unlocking-Multimodal-Intelligence-Workshop-on-RAG-System-b8be2cae40b74b1989ab8dd937c9c94f',
+  // },
+  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
